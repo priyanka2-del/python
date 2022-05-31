@@ -1,0 +1,4 @@
+# dictionary comprehension in string input by user
+str=input("enter string:")
+dic = {x.upper(): x*3 for x in str} 
+print(dic)
