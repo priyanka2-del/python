@@ -1,0 +1,14 @@
+#program to merge two dictinories 
+dic1={} 
+size1=int(input("enter size1: ")) 
+for i in range(size1): 
+    dic1[i]=int(input("enter element:")) 
+dic2={}   
+#here key of dic2 starts after dic1 key last
+size2=int(input("enter size2: ")) 
+for i in range(size1,size2+size1): 
+    dic2[i]=int(input("enter element:"))                    
+a=dic2.items() 
+for i,j in a: 
+    dic1[i]=j 
+print(dic1)
